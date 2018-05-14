@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head></head> 
+var script = document.createElement('script');
+script.src = 'http://code.jquery.com/jquery-1.11.0.min.js';
+script.type = 'text/javascript';
+document.getElementsByTagName('head')[0].appendChild(script);
+<body>
+<form name ="abhijeet">
+Username:
+ <input type="text" id="user" name="username"/>
+ <br>
+Date of Birth:
+ <input type="Date" id="dob" name="Dob"/>
+ <br>
+ <input type="button" value="submit!" onClick="process()"/>
+</form>
+<script language="javascript"> 
+   function process()
+   {
+   text= document.getElementById("user").value;
+   dob= document.getElementById("dob").value;
+   alert("Hi ! "+text+" DOB : "+dob);
+  }
+</script>
+</body>
+</html> 
